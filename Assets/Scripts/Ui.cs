@@ -13,9 +13,13 @@ public class Ui : MonoBehaviour
     private string LabelText;
     private GUIStyle FontSize;
 
+    public Player1 Player1;
+
 
     private void OnGUI()
     {
+
+        Player1 = new Player1();
 
         FontSize = new GUIStyle(GUI.skin.label);
         FontSize.fontSize = 30;
@@ -29,7 +33,7 @@ public class Ui : MonoBehaviour
 
         if (GUI.Button(new Rect(110, 71, 236, 158), "Player 1"))
         {
-            LabelText = "Name: Mari\n\rAge: 26\n\rPhysical Damage: 0\n\rArmor: 0\n\rIntelligence: 50\n\rSpeed: 10";
+            LabelText = ("Name: " + Player1.Name + "\nAge: " + Player1.age + "\nPhysical Damage: " + Player1.damage + "\n\rArmor: " + Player1.armor + "\n\rIntelligence: " + Player1.intelligence + "\n\rSpeed: " + Player1.speed);
         }
 
         if (GUI.Button(new Rect(110, 300, 236, 158), "Player 2"))
