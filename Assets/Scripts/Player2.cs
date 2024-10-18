@@ -6,11 +6,11 @@ public class Player2 : MonoBehaviour
 {
 
 
-    public string Name = "Mari";
-    public float age = 26;
-    public int damage = 0;
-    public int armor = 0;
-    public int intelligence = 50;
-    public int speed = 10;
+    public string Name = "Sunny";
+    public float age = 15;
+    public int damage = 20;
+    public int armor = 20;
+    public int intelligence = 20;
+    public int speed = 9;
 
 }
